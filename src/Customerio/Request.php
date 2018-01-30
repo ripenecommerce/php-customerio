@@ -63,7 +63,7 @@ class Request {
             return new Response($e->getCode(), $e->getMessage());
         }
 
-        return new Response($response->getStatusCode(), $response->getReasonPhrase());
+        return new Response($response->getStatusCode(), $response->getReasonPhrase() . ': '. $response->getBody());
     }
 
     /**
@@ -83,7 +83,7 @@ class Request {
             return new Response($e->getCode(), $e->getMessage());
         }
 
-        return new Response($response->getStatusCode(), $response->getReasonPhrase());
+        return new Response($response->getStatusCode(), $response->getReasonPhrase() . ': '. $response->getBody());
     }
 
     /**
@@ -108,7 +108,7 @@ class Request {
             return new Response($e->getCode(), $e->getMessage());
         }
 
-        return new Response($response->getStatusCode(), $response->getReasonPhrase());
+        return new Response($response->getStatusCode(), $response->getReasonPhrase() . ': '. $response->getBody());
     }
 
     /**
@@ -138,7 +138,7 @@ class Request {
             return new Response($e->getCode(), $e->getMessage());
         }
 
-        return new Response($response->getStatusCode(), $response->getReasonPhrase());
+        return new Response($response->getStatusCode(), $response->getReasonPhrase() . ': '. $response->getBody());
     }
 
     /**
@@ -162,7 +162,7 @@ class Request {
             return new Response($e->getCode(), $e->getMessage());
         }
 
-        return new Response($response->getStatusCode(), $response->getReasonPhrase());
+        return new Response($response->getStatusCode(), $response->getReasonPhrase() . ': '. $response->getBody());
     }
 
     /**
